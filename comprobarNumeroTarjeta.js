@@ -5,7 +5,7 @@ function verificarnumeroTarjeta(numTarj){
     let suma=0;
     let longitud=numTarj.length;
     for (let i=0;i<numTarj.length;i++) {
-        let digito=numTarj[longitud-1-i];
+        let digito=parseInt(numTarj[longitud-1-i]);
         if(i%2!=0){
             digito=digito*2;
             if(digito>9){
